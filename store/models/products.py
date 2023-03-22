@@ -9,7 +9,7 @@ class Products(models.Model):
     description = models.CharField(
         max_length=250, default=name, null=True
     )
-    image = models.ImageField(upload_to='uploads/products/')
+    imageurl = models.CharField(max_length=200)
 
     @staticmethod
     def get_produts_id(ids):
